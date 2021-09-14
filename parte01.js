@@ -1,17 +1,35 @@
-document.querySelector("form").onsubmit= function(){
-    return false;
+
+function criarCard(){
+    title= document.getElementById("title").value;    
+    let cardSection= document.getElementById("content");
+    cardSection.innerHTML+=`<div><h2>${title}</h2></div>`;
+    description= document.getElementById("description").value;
+    cardSection.innerHTML += `<div><p>${description}</p></div>`;
+    url = document.getElementById("url").value;
+    cardSection.innerHTML += `<div><img id="imagem" src="${url}"></div>`;
 }
 
-let title = document.getElementById("title").value;
-let description = document.getElementById("description").value;
-let url = document.getElementById("url").value;
-let content = document.querySelector(".content");
-let nome = document.querySelector(".nome");
-document.getElementById("submit").addEventListener("click",
-    function(){
-        nome.innerHTML += title;    
-    }
-);
+
+
+
+
+
+
+
+// document.querySelector("form").onsubmit= function(){
+//     return false;
+// }
+
+// let title = document.getElementById("title").value;
+// let description = document.getElementById("description").value;
+// let url = document.getElementById("url").value;
+// let content = document.querySelector(".content");
+// let nome = document.querySelector(".nome");
+// document.getElementById("submit").addEventListener("click",
+//     function(){
+//         nome.innerHTML += title;    
+//     }
+// );
 
 // function criarCard() {
 //     Title = document.getElementById("Title").value;

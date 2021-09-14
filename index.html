@@ -26,34 +26,37 @@
         <div class="alternative">
             <span>OR</span>
         </div>
-        <form action="">
-            <label for="Title">
-                <span>Title</span>
-                <input type="text" id="title" name="Title">
-            </label>
-            <label for="Description">
-                <span>Description</span>
-                <input type="text" id="description" name="description">
-            </label>
-            <label for="URL">
-                <span>URL</span>
-                <input type="url" id="url" name="URL">
-            </label>
-            <label>
-                <input type="submit" id="submit" value="Submit">
-            </label>
-        </form>
+        <div>
+            <form action="">
+                <label for="Title">
+                    <span>Title</span>
+                    <input type="text" id="title" name="Title">
+                </label>
+                <label for="Description">
+                    <span>Description</span>
+                    <input type="text" id="description" name="description">
+                </label>
+                <label for="URL">
+                    <span>URL</span>
+                    <input type="url" id="url" name="URL">
+                </label>
+                <label>
+                    <input type="submit"  onclick= "criarCard()" id="submit" value="Submit">
+                </label>
+                <label>
+                    <input type="submit"  onclick= "print()" id="imprimir" value="PrintScreen">
+                </label>
+            </form>
+        </div>
     </main>
     <div class="container">
         <div class="card">
-            <div class="content">
-                <h2 class="nome">Vitor</h2>
-                <h3>a</h3>
-                <p>ada</p>
-                <a href="#">Read More</a>
+            <div id="content">
+                
             </div>
         </div>
     </div>
+    <script src="parte01.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".card"), {

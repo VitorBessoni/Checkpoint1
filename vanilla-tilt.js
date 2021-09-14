@@ -1,18 +1,3 @@
-document.querySelector("form").onsubmit= function(){
-  return false;
-}
-
-let title = document.getElementById("title").value;
-let description = document.getElementById("description").value;
-let url = document.getElementById("url").value;
-let content = document.querySelector(".content");
-let nome = document.querySelector(".nome");
-document.getElementById("submit").addEventListener("click",
-  function(){
-      nome.innerHTML += title;    
-  }
-);
-
 var VanillaTilt = (function () {
 'use strict';
 
